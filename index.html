@@ -7,6 +7,7 @@
     <title>SPA_IMC</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
     <!--META ETIQUETAS-->
     <meta name="description"
         content="This web application, developed with HTML, CSS, and JavaScript, aims to calculate a person's Body Mass Index (BMI) based on their weight and height. It provides a simple and intuitive interface so users can quickly obtain their results and learn their classification based on the value obtained.">
@@ -24,7 +25,30 @@
 </head>
 
 <body>
+    <header>
+        
+    </header>
 
+    <main>
+        <div class="container">
+            <h1>calculadora de imc</h1> 
+            
+                <form>
+                    <label for="height">ingrese su estatura</label>
+                    <input type="text" id="height">
+                    <label for="weight">ingrese su peso:</label>
+                    <input type="text" id="weight" />
+                </form>
+                <button onclick="calculateIMC()">calcular</button>
+                <div id="result"> </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./src/js/main.js"></script>
 </body>
 
 </html>
